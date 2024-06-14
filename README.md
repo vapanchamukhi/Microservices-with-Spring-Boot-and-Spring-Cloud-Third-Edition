@@ -13,7 +13,7 @@ Start with Docker Compose to run microservices with databases and messaging serv
 By the end, you'll build scalable microservices using Spring Boot and Spring Cloud.
 
 ## Key Takeaways
--	Build reactive microservices using Spring Boot
+- Build reactive microservices using Spring Boot
 - Develop resilient and scalable microservices using Spring Cloud
 - Use OAuth 2.1/OIDC and Spring Security to protect public APIs
 - Implement Docker to bridge the gap between development, testing, and production
@@ -28,6 +28,7 @@ By the end, you'll build scalable microservices using Spring Boot and Spring Clo
 If you want to try out the source code of this book with newer versions of Spring, Java, Kubernetes, and Istio than used in the book, you can take a look at the following blog posts:
 
 1. [Upgrade to Spring Boot 3.1](https://callistaenterprise.se/blogg/teknik/2023/10/18/microservices-upgrade-to-SpringBoot31/) (published 10 October 2023)
+1. [Upgrade to Spring Boot 3.2 and Java 21](https://callistaenterprise.se/blogg/teknik/2024/06/03/microservices-upgrade-to-SpringBoot32/) (published 3 June 2024)
 
 ## Errata
 
@@ -57,7 +58,7 @@ If you want to try out the source code of this book with newer versions of Sprin
 
   Should be: *Change the service implementation so it calls the **core** services’ APIs in parallel and in a non-blocking way*  
 
-* **Page 603**, chapter 21, *Installation Instructions for macOS*, section *Post-installation actions*.
+* **Page 603**, Chapter 21, *Installation Instructions for macOS*, section *Post-installation actions*.
 
   The following post-installation instruction is missing:
 
@@ -76,6 +77,14 @@ If you want to try out the source code of this book with newer versions of Sprin
   For more information, see: 
   1. <https://docs.docker.com/desktop/settings/mac/#advanced-1>
   2. <https://docs.docker.com/desktop/mac/permission-requirements/#installing-symlinks>
+
+* **Page 611**, section *Installing WSL 2 together with a default Ubuntu server*.
+
+  The install command for WSL 2 is incorrect, missing a hyphen; it should be:
+
+  ```
+  wsl --install
+  ```
 
 ## Outline and Chapter Summary
 This book is about building production-ready microservices using Spring Boot 3 and Spring Cloud. This book primarily covers Spring Boot, Spring Cloud, Docker, Kubernetes, Istio, the EFK stack, Prometheus, and Grafana. Each of these open source tools works great by itself, but it can be challenging to understand how to use them together in an advantageous way. In some areas, they complement each other, but in other areas they overlap, and it is not obvious which one to choose for a particular situation.
